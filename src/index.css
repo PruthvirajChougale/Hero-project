@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+#content{
+  display:grid;
+  grid-template-columns:0.5fr 1fr 0.5fr;
+  height:9vh;
+  margin-bottom:1vh;
+  background-color: rgb(173, 82, 243);
+  color:#fff;
+}
+#my,#title-heroes{
+  display:inline;
+}
+#title-heroes{
+  color:rgb(241, 166, 68);
+}
+#main{
+  /* height:90vh; */
+  width:100vw;
+  background-color:rgb(241, 166, 68);
+  display:grid;
+ grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+.display{
+  margin:2rem;
+}
+.heroes-home{
+  height:40vh;
+  width:40vh;
+  background-color: aquamarine;
+}
+h1{
+  position:relative;
+  top: 1vh;
+}
+h3{
+  margin-top:1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero-main{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+img{
+  height:30vh;
+  border-radius:10px;
+  margin:20px;
+}
+.hero-main{
+  background-color:rgb(247, 73, 73);
+  width:100vw;
+}
+.display-hero{
+  margin:20px;
+}
+.home-nav,.heroes-nav{
+  display:inline;
+  margin:10px;
+  position:relative;
+  top:2.4vh;
+  
+}
+.editme{
+  background-color:grey;
+  height:10vh;
+  color:#fff;
+}
+form{
+  background-color: aquamarine;
+}
+button{
+  margin:1vh;
+  padding:4px;
+  border-radius:5px;
+  border:none;
+
+}
+input{
+  border-radius:10px;
+  border:none;
+  height:20px;
+}
+button:active{
+  scale:1.1;
+}
+@media (max-width:880px){
+ .hero-main{
+  display:grid;
+  grid-template-columns: 1fr;
+ }
+ #main{
+  display:grid;
+  grid-template-columns:1fr;
+  background-color:rgb(241, 166, 68);
+ }
 }
